@@ -11,7 +11,7 @@
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
-            renderer="logarithmicDepthBuffer: true;"
+            renderer="logarithmicDepthBuffer: true;"     
             embedded
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
@@ -22,6 +22,8 @@
                     src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
+            
+            
 
                 <a-entity
                     look-at="[gps-camera]"
@@ -29,8 +31,16 @@
                     gltf-model="#animated-asset"
                     scale="0.022140853098432976 0.022140853098432976 0.022140853098432976"
                     renderer="physicallyCorrectLights: true"
+                    renderer="antialias: true;
+                   colorManagement: true;
+                   sortObjects: true;
+                   physicallyCorrectLights: true;
+                   maxCanvasWidth: 1920;
+                   maxCanvasHeight: 1920;"
+                    
                     gps-entity-place="latitude: 40.099471348024785; longitude: -74.22689555996305;"
                 ></a-entity>
+            
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
