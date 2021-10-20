@@ -37,11 +37,12 @@ scene.environment = envMap.environmentMap;
                           renderer.outputEncoding = THREE.sRGBEncoding;
                           renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.enabled = true;
+                          light="type: ambient; color: #CCC; intensity: 0.9"
              
                     value="This content will always face you."
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    position="10 0 10" rotation="0 90 0"
+                    position="100 0 100" rotation="0 270 0"
                     scale="0.092140853098432976 0.092140853098432976 0.092140853098432976"
                     renderer="physicallyCorrectLights: true"
                     renderer.gammaOutput = true;
