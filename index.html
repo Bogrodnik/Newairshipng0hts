@@ -24,14 +24,11 @@
                 ></a-asset-item>
             </a-assets>
             
-            
-            
             <a-entity light="type: ambient; color: #CCC"></a-entity>
-            <a-entity light="type: hemisphere; color: #33C; groundColor: #3C3; intensity: 1000"></a-entity>
+            <a-entity light="type: hemisphere; color: #33C; groundColor: #3C3; intensity: 1000"></a-entity>            
+            
                 <a-entity
-                          
-                       
-             
+
                     value="This content will always face you."
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
@@ -41,9 +38,12 @@
                     renderer.gammaOutput = true;
                     renderer.gammaFactor = .2;
                     gps-entity-place="latitude: 40.099471348024785; longitude: -74.22689555996305;"
+                          
                 ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
+            
         </a-scene>
+        
     </body>
 </html>
